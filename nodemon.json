@@ -1,9 +1,10 @@
 {
+  "restartable": "rs",
   "watch": ["src"],
-  "ext": "ts",
-  "ignore": ["src/**/*.spec.ts"],
-  "exec": [
-    "ts-node ./src/bin/dev",
-    "ts-node ./src/bin/auth"
-  ]
+  "ext": "ts, json, js",
+  "verbose": true,
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "ignore": ["src/**/*.spec.ts","node_modules/**/node_modules",".gitignore"]
 }
